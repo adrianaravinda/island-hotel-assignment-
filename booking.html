@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking & Reservations - Island Hotel</title>
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">Island Hotel</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="branches.html">Branches</a></li>
+        <li><a href="adventures.html">Adventures</a></li>
+        <li><a href="restaurants.html">Restaurants</a></li>
+        <li class="dropdown">
+          <a href="#">Events ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="event1.html">Serenity Gala</a></li>
+            <li><a href="event2.html">Tropical Gala</a></li>
+          </ul>
+        </li>
+        <li><a href="booking.html" class="active">Booking</a></li>
+      </ul>
+      <button class="menu-toggle">☰</button>
+    </nav>
+  </header>
+
+  <main class="page-section container">
+    <div class="page-header" style="padding-top:0;">
+        <h1>Book Your Stay & Adventures</h1>
+        <p>Fill in your details below to finalize your booking. We look forward to welcoming you!</p>
+    </div>
+    
+    <div class="booking-grid">
+      <div class="form-section">
+        <form id="bookingForm">
+          <h3>Room Booking</h3>
+          <div class="form-group">
+            <label for="roomType">Room Type</label>
+            <select id="roomType">
+              <option value="single">Single - 25,000 LKR</option>
+              <option value="double">Double - 35,000 LKR</option>
+              <option value="triple">Triple - 40,000 LKR</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="roomCount">Number of Rooms</label>
+            <input type="number" id="roomCount" value="1" min="1">
+          </div>
+          <div class="form-group">
+            <label for="children">Children (Above 5 years)</label>
+            <input type="number" id="children" value="0" min="0">
+          </div>
+          <div class="form-group">
+            <label for="extraBed"><input type="checkbox" id="extraBed" style="width: auto; margin-right: 10px;"> Add Extra Bed (8,000 LKR)</label>
+          </div>
+          <div class="form-group">
+            <label for="promo">Promo Code</label>
+            <input type="text" id="promo" placeholder="Enter 'Promo123' for 5% off">
+          </div>
+          <button type="button" id="bookNow" class="btn btn-primary">Add Room Booking</button>
+        </form>
+
+        <hr style="margin: 3rem 0;">
+
+        <form id="adventureForm">
+          <h3>Adventure Booking</h3>
+          <div class="form-group">
+            <label for="adventureType">Select Adventure</label>
+            <select id="adventureType">
+              <option value="divingLocalAdult">Diving - Local Adult (5,000 LKR)</option>
+              <option value="divingLocalKid">Diving - Local Kid (2,000 LKR)</option>
+              <option value="divingForeignAdult">Diving - Foreign Adult (10,000 LKR)</option>
+              <option value="divingForeignKid">Diving - Foreign Kid (5,000 LKR)</option>
+            </select>
+          </div>
+           <div class="form-group">
+            <label for="guide"><input type="checkbox" id="guide" style="width: auto; margin-right: 10px;">Need a Guide (Adults: 1,000 LKR, Kids: 500 LKR)</label>
+          </div>
+          <button type="button" id="bookAdventure" class="btn btn-primary">Book Adventure Now</button>
+        </form>
+      </div>
+
+      <div class="booking-summary">
+        <h3>Booking Summary</h3>
+        <p>Current Booking: <strong id="currentBooking">None</strong></p>
+        <p>Current Cost: <strong id="currentCost">0 LKR</strong></p>
+        <hr style="margin: 1.5rem 0;">
+        <p>Overall Booking: <strong id="overallBooking">None</strong></p>
+        <p class="total">Overall Cost: <strong id="overallCost">0 LKR</strong></p>
+
+        <div style="margin-top: 2rem;">
+            <button id="addFavourite" class="btn btn-secondary" style="width:100%; margin-bottom: 1rem;">Save as Favourite</button>
+            <button id="checkLoyalty" class="btn btn-secondary" style="width:100%;">Check Loyalty Points</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+   <footer class="footer">
+    <div class="container footer-content">
+       <div class="footer-section">
+        <h4>About Island Hotel</h4>
+        <p>Experience unparalleled luxury and comfort where every moment is crafted to perfection.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="branches.html">Our Branches</a></li>
+          <li><a href="adventures.html">Adventures</a></li>
+          <li><a href="restaurants.html">Restaurants</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <p>123 Hotel Lane, Colombo, Sri Lanka</p>
+        <p>Email: contact@islandhotel.lk</p>
+        <p>Phone: +94 11 234 5678</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Island Hotel | Student Project</p>
+    </div>
+  </footer>
+
+
+  <script src="js/nav.js"></script>
+  <script src="js/booking.js"></script>
+</body>
+</html>

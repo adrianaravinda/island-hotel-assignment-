@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lobster&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F0F7F4;
+  color: #333;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.event-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/event2-hero.png') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 2rem 6rem;
+  border-bottom: 5px solid #FF6B6B;
+}
+
+.event-nav {
+  text-align: left;
+  margin-bottom: 4rem;
+}
+
+.back-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  background-color: rgba(0,0,0,0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+.hero-content h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  animation: bounceInDown 1s ease;
+}
+
+@keyframes bounceInDown {
+  0%, 60%, 75%, 90%, 100% {
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  0% { opacity: 0; transform: translate3d(0, -3000px, 0); }
+  60% { opacity: 1; transform: translate3d(0, 25px, 0); }
+  75% { transform: translate3d(0, -10px, 0); }
+  90% { transform: translate3d(0, 5px, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.btn-hero {
+  background-color: #FF6B6B;
+  color: #fff;
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 700;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.5);
+}
+
+.btn-hero:hover {
+  transform: scale(1.05);
+}
+
+
+.event-main {
+  padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.intro-section {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 5rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.intro-section .text-content, .intro-section .image-content {
+  flex: 1;
+}
+
+.intro-section h2, .highlights-section h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 2.8rem;
+  color: #1A535C;
+}
+
+
+.intro-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.highlights-section {
+  text-align: center;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.highlight-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  border-bottom: 4px solid #4ECDC4;
+  transition: transform 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-10px);
+}
+
+.highlight-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.highlight-card h3 {
+  font-size: 1.5rem;
+  color: #1A535C;
+}
+
+
+.event-footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #1A535C;
+  color: #fff;
+}
